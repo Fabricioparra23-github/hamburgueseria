@@ -24,6 +24,8 @@ html {
     --anchomaximo: 68.75em;
 }
 
+:root {}
+
 img {
     width: 100%;
     height: auto;
