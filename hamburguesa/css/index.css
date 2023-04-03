@@ -240,8 +240,6 @@ main section h2 {
     font-size: 2em;
     text-align: center;
 
-
-
 }
 
 main section h2 span {
@@ -265,8 +263,52 @@ main section .underline span {
 }
 
 main section .underline hr {
-    border-color: var(--colorprincipal);
+    border-color: var(--colorprincipal)
+}
 
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section .grid article {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main section article>div .fa-solid {
+    border: 1px solid var(--colorprincipal);
+    padding: 0.75em;
+    color: var(--colorprincipal);
+    font-size: 120%;
+}
+
+main section article h3 {
+    font-weight: 700;
+    font-size: 110%;
+    margin: 0.625em 0em;
+}
+
+main p {
+    color: #666;
+    line-height: 1.20em;
+    font-size: 95%;
+}
+
+main section article p {
+    margin-bottom: 0.5em;
+}
+
+.enlace {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorprincipal);
+
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
 }
 
 /* final our services */
@@ -275,6 +317,18 @@ main section .underline hr {
 /*inicio mediaquearies */
 
 @media(min-width: 37.5em) {
+    main section .grid article {
+        width: 50%;
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin-top: 1em;
+    }
+
+    main section .grid article:last-child {
+        width: 100%;
+
+    }
 
     /* 600px tablet */
 }
@@ -287,10 +341,14 @@ main section .underline hr {
     }
 
     footer {
-
         text-align: left;
     }
 
+    main section .grid :is(article, article:last-child) {
+        width: 33.333%;
+
+
+    }
 }
 
 @media(min-width: 62.75em) {
