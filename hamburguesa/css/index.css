@@ -313,6 +313,54 @@ main section article p {
 
 /* final our services */
 
+/* inicio aboutus */
+
+main #aboutus {
+    margin-bottom: 4.375em;
+}
+
+main section .flex {
+    display: flex;
+    flex-wrap: column;
+    margin-top: 2.5em;
+}
+
+main section .flex h3 {
+    font-weight: 700;
+    font-size: 110%;
+}
+
+main section .flex h4 {
+    color: var(--colorprincipal);
+    margin: var(--margingrid)0;
+}
+
+main section .flex .imagen {
+    width: 95%;
+    margin: 2.5em auto;
+}
+
+main section .flex .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+
+}
+
+main section .flex .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 2s;
+}
+
+main section .flex .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+
+}
+
+
+
+
+/* final aboutus */
 
 /*inicio mediaquearies */
 
@@ -323,11 +371,6 @@ main section article p {
         border-left: 1px solid #aaa;
         padding: 1.5em;
         margin-top: 1em;
-    }
-
-    main section .grid article:last-child {
-        width: 100%;
-
     }
 
     /* 600px tablet */
@@ -347,7 +390,19 @@ main section article p {
     main section .grid :is(article, article:last-child) {
         width: 33.333%;
 
+    }
 
+    main section .grid article:last-child {
+        width: 100%;
+
+    }
+
+    main section .flex {
+        flex-direction: row;
+    }
+
+    main section .flex .imagen {
+        margin: 0 2.5em;
     }
 }
 
@@ -374,8 +429,6 @@ main section article p {
 
 
     }
-
-
 }
 
 /* final mediqerys */
