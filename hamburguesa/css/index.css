@@ -142,8 +142,6 @@ footer a:hover {
     color: var(--colorprincipal);
 }
 
-
-
 /* final footer */
 
 .flecha a {
@@ -165,7 +163,6 @@ footer a:hover {
     background-blend-mode: multiply;
     color: white;
     display: flex;
-
 
 }
 
